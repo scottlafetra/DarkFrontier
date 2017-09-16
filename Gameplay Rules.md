@@ -24,8 +24,9 @@
 ## Advancing projectiles
 For each projectile on the board:
 1. If the projectile is a missle, increase its velocity by its acceleration.
+2. If the marker was a missile, decrease the spread counter by 1. If it can't be lowered anymore, remove the marker from the board. *The flak has spread out too much to be effective.* 
 1. Move in the indicated direction the indicated amount. Missles move by both their inital velocity and the velocity on their die.
-2. If a line drawn between the starting and final positions would encounter any objects, resolve collisons as normal.
+2. If a line drawn between the starting and final positions of any two objects would intersect, resolve collisons as normal.
 3. Flip the marker over, indicating it has been moved.
 
 ## Resolving the velocity counter
@@ -39,6 +40,25 @@ For each projectile on the board:
 2. Add the velocity or launch velocity of the weapon you are firing to one or two adjacent hexes in a direction that the chosen weapon can fire.
 3. Resolve the velocity counter.
 4. Take one of the flak or missle markers marked with the velocity of the greatest value in the counter and place it in the direction indicated by the hex with the greatest velocity value on that side of your ship. Note that by choosing a marker that moves along the point of the hex grid, you have some freedom to angle your shot how you like. Make sure to place the markers such that their color matches that of the other markers currently on the board.
+5. If the marker placed was a flak, place a dice on it as a spread counter currently set to 6.
 
 ## Resolving Collisions
-// TODO
+### Collisions between flak and other flak or missles:
+Flak is too sparse no interfere with other flak or debris clouds.
+
+### Collisions between two missiles:
+1. Either player may choose to detonate their missle early. If both of these missles are from the same player, this is not an option.
+2. If either missle was detonated, both become flak, traveling with as if fired from a ship traveling at the missile's inital velocity and with a projectile velocity of the missile's gained velocity.
+
+### Collisions between flak and a ship
+1. The player who controls the ship rolls two die. If either of them are higher than the spread value, the SCRAM system on board the ship was able to avoid the debris through a combination of luck and quick calculations. Continue with the steps below only if the flak was not dodged.
+2. Roll a die to represent the point defenses of the ship firing. If the result is higher than the rating of the ship's point defenses, the flak was sucsessfully vaporized or else repelled.
+3. If neither of these defense systems work, the ship is hit! Roll on the ship's damage table to see what happens.
+
+### Collisions between a missle and a ship
+1. The player who controls the ship may choose to fire one of their missles as a counter missle. If they do, change the missle into flak as described in collisions between two missles and resolves as a collision between that flak and the ship.
+2. Roll a die to represent the point defenses of the ship firing. If the result is higher than the rating of the ship's point defenses, the missle was destroyed. The ship is hit by the missile's debris! Roll on the ship's damage table to see what happens.
+3. If neither system sucessfully destroys the missile, the missle sucsessfully delivers it's thermonuclear warhead to the ship and detonates it. The ship is destroyed,
+
+
+
