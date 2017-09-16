@@ -58,7 +58,10 @@ Flak is too sparse no interfere with other flak or debris clouds.
 ### Collisions between a missle and a ship
 1. The player who controls the ship may choose to fire one of their missles as a counter missle. If they do, change the missle into flak as described in collisions between two missles and resolves as a collision between that flak and the ship.
 2. Roll a die to represent the point defenses of the ship firing. If the result is higher than the rating of the ship's point defenses, the missle was destroyed. The ship is hit by the missile's debris! Roll on the ship's damage table to see what happens.
-3. If neither system sucessfully destroys the missile, the missle sucsessfully delivers it's thermonuclear warhead to the ship and detonates it. The ship is destroyed,
+3. If neither system sucessfully destroys the missile, the missle sucsessfully delivers it's thermonuclear warhead to the ship and detonates it. The ship is destroyed.
+
+### Collisions between two ships
+1. The player controlling each ship chooses an amount of missles to fire and removes that amount from their missle bay. Both players resolve flak collisions with their ship equal to the lower of the two numbers. The player who fired the least amount of missles resolves missle collisions equal to the diffrence between those two numbers.
 
 
 
