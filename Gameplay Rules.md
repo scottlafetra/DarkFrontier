@@ -42,6 +42,11 @@ For each projectile on the board:
 4. Take one of the flak or missle markers marked with the velocity of the greatest value in the counter and place it in the direction indicated by the hex with the greatest velocity value on that side of your ship. Note that by choosing a marker that moves along the point of the hex grid, you have some freedom to angle your shot how you like. Make sure to place the markers such that their color matches that of the other markers currently on the board.
 5. If the marker placed was a flak, place a dice on it as a spread counter currently set to 6.
 
+## Restrictions on missiles
+1. You may only fire as many missiles per turn (10s) as indicated on your ship's stat sheet.
+2. Each time you fire a missle, you remove one missle from your missle bay.
+3. You may not fire a missile if you do not have one in your missile bay to fire.
+
 ## Resolving Collisions
 ### Collisions between flak and other flak or missles:
 Flak is too sparse no interfere with other flak or debris clouds.
