@@ -68,5 +68,6 @@ Flak is too sparse no interfere with other flak or debris clouds.
 ### Collisions between two ships
 1. The player controlling each ship chooses an amount of missles to fire and removes that amount from their missle bay. Both players resolve flak collisions with their ship equal to the lower of the two numbers. The player who fired the least amount of missles resolves missle collisions equal to the diffrence between those two numbers.
 
-
+### Gimbaling
+If an engine has gimbaling, you may destribute it's thrust when increasing velocity between two adjacent hexes.
 
