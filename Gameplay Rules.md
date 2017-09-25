@@ -1,33 +1,32 @@
-*v0.0.1*
+*v0.1.0*
 # Gameplay Rules
 
 ## Round Overview
-1. Defender takes turn
-2. Attacker takes turn
-3. Advance Projectiles
-
-## Player Turn Overview
-1. Rotate ship
-2. Change velocity
-3. Move ship and loose shots
+1. Comand
+2. Move Player Ships
+3. Place Projectiles
+4. Advance Projectiles
 
 ## Setup
 1. The defending player places their ship with no velocity in the center hex of the map, on the White Sands Shipyard.
 2. The attacking player places their ship on the edge of the map with whatever velocity they want.
 
 ## Taking a turn
-1. Rotate your ship up to the rotate speed that your RCS sytstem gives you on your stat card.
-2. You may add to the current numbers on your velocity counter by adding dice in the direction your main thrusters are pointed up to the amount of gees of acceleration your ship can produce. If your main engines have gimbaling, you can distribute this between two adjacent hexes on the velocity counter.
-3. Resolve the velocity counter.
-4. Move your ship the amount in each direction indicated by the velocity counter. You make take shots at any point during this movement. If a line drawn between your starting and final positions would encounter any objects, resolve collisons as normal.
+**Command**
+1. Each player secretly sets the rotaions and burn amounts for their ships on their command dials.
+2. When both players have done this they reveal their comand dials.
 
-## Advancing projectiles
+**Move**
+1. Starting with the defender, each player rotates their ship the amount indicated on their command dial.
+2. Starting with the defender, each player burns their engines, adding the amount indicated on the command dial to their velocity in the direction that their ship's engine thrusts.
+
+**Place projectiles**
+1. Both players may fire their weapons as if they were on any hex that they visited this turn.
+
+## Advance projectiles
 For each projectile on the board:
-1. If the projectile is a missle, increase its velocity by its acceleration.
-2. If the marker was a missile, decrease the spread counter by 1. If it can't be lowered anymore, remove the marker from the board. *The flak has spread out too much to be effective.* 
-1. Move in the indicated direction the indicated amount. Missles move by both their inital velocity and the velocity on their die.
-2. If a line drawn between the starting and final positions of any two objects would intersect, resolve collisons as normal.
-3. Flip the marker over, indicating it has been moved.
+1. If the projectile is a missle, the player that controls it increases the velocity by up to its acceleration in gees in the direction it is facing.
+2. If the marker was a flak, decrease the spread counter by 1. If it can't be lowered anymore, remove the marker from the board. *The flak has spread out too much to be effective.* 
 
 ## Resolving the velocity counter
 *When it comes to simulating spaceflight manually, simplicity is paramount. There are a few rules that you should use every time you modify your velocity counter to keep the game managable. If you follow these rules, there should never be more than two hexes on your counter in use at one time.*
@@ -39,21 +38,21 @@ For each projectile on the board:
 1. Copy your velocity from your velocity counter to the blank one on the right side of your ship's stat sheet.
 2. Add the velocity or launch velocity of the weapon you are firing to one or two adjacent hexes in a direction that the chosen weapon can fire.
 3. Resolve the velocity counter.
-4. Take one of the flak or missle markers marked with the velocity of the greatest value in the counter and place it in the direction indicated by the hex with the greatest velocity value on that side of your ship. Note that by choosing a marker that moves along the point of the hex grid, you have some freedom to angle your shot how you like. Make sure to place the markers such that their color matches that of the other markers currently on the board.
-5. If the marker placed was a flak, place a dice on it as a spread counter currently set to 6.
+4. Take one of the projectile tokens and place it in the direction it is being fired. The attacker plays projectiles with the black side up and the defender places projectiles with the white side up.
+5. Copy the velocity from the your right velocity counter onto the projectile.
+5. If the token placed was a flak, place a dice in the center of the token as a spread counter currently set to 6.
 
 ## Restrictions on missiles
 1. You may only fire as many missiles per turn (10s) as indicated on your ship's stat sheet.
-2. Each time you fire a missle, you remove one missle from your missle bay.
-3. You may not fire a missile if you do not have one in your missile bay to fire.
+3. You may not fire a missile if your missle bay isn't functional.
 
 ## Resolving Collisions
 ### Collisions between flak and other flak or missles:
 Flak is too sparse no interfere with other flak or debris clouds.
 
 ### Collisions between two missiles:
-1. Either player may choose to detonate their missle early. If both of these missles are from the same player, this is not an option.
-2. If either missle was detonated, both become flak, traveling with as if fired from a ship traveling at the missile's inital velocity and with a projectile velocity of the missile's gained velocity.
+1. Either player may choose to detonate their missle early.
+2. If either missle was detonated, both become flak, traveling with the same velocity as they had before.
 
 ### Collisions between flak and a ship
 1. The player who controls the ship rolls two die. If either of them are higher than the spread value, the SCRAM system on board the ship was able to avoid the debris through a combination of luck and quick calculations. Continue with the steps below only if the flak was not dodged.
@@ -61,13 +60,16 @@ Flak is too sparse no interfere with other flak or debris clouds.
 3. If neither of these defense systems work, the ship is hit! Roll on the ship's damage table to see what happens.
 
 ### Collisions between a missle and a ship
-1. The player who controls the ship may choose to fire one of their missles as a counter missle. If they do, change the missle into flak as described in collisions between two missles and resolves as a collision between that flak and the ship.
-2. Roll a die to represent the point defenses of the ship firing. If the result is higher than the rating of the ship's point defenses, the missle was destroyed. The ship is hit by the missile's debris! Roll on the ship's damage table to see what happens.
+1. The player who controls the ship may choose to fire one of their missles as a countermeasure. If they do, resolve the collision as a flak and ship collision instead of placing the fired missile.
+2. Roll a die to represent the point defenses of the ship firing. If the result is equal to or higher than the rating of the ship's point defenses, the missle was destroyed. Otherwise, the ship is hit by the missile's debris! Roll on the ship's damage table to see what happens.
 3. If neither system sucessfully destroys the missile, the missle sucsessfully delivers it's thermonuclear warhead to the ship and detonates it. The ship is destroyed.
+4. Remove the missile token fron the board.
 
 ### Collisions between two ships
-1. The player controlling each ship chooses an amount of missles to fire and removes that amount from their missle bay. Both players resolve flak collisions with their ship equal to the lower of the two numbers. The player who fired the least amount of missles resolves missle collisions equal to the diffrence between those two numbers.
+1. The player controlling each ship chooses an amount of missles to fire. 
+2. Both players resolve flak collisions with their ship equal to the lower of the two numbers.
+3. The player who fired the least amount of missles resolves missle collisions equal to the diffrence between those two numbers.
 
 ### Gimbaling
-If an engine has gimbaling, you may destribute it's thrust when increasing velocity between two adjacent hexes.
+If an engine has gimbaling, you may distribute it's thrust when increasing velocity between two adjacent hexes on the ship's velocity counter.
 
