@@ -1,4 +1,4 @@
-*v0.1.0*
+*v0.1.1*
 # Gameplay Rules
 
 ## Round Overview
@@ -26,7 +26,8 @@
 ## Advance projectiles
 For each projectile on the board:
 1. If the projectile is a missle, the player that controls it increases the velocity by up to its acceleration in gees in the direction it is facing.
-2. If the marker was a flak, decrease the spread counter by 1. If it can't be lowered anymore, remove the marker from the board. *The flak has spread out too much to be effective.* 
+2. Move the projectile the amount indicated on the token.
+3. If the marker was a flak, decrease the spread counter by 1. If it can't be lowered anymore, remove the marker from the board. *The flak has spread out too much to be effective.* 
 
 ## Resolving the velocity counter
 *When it comes to simulating spaceflight manually, simplicity is paramount. There are a few rules that you should use every time you modify your velocity counter to keep the game managable. If you follow these rules, there should never be more than two hexes on your counter in use at one time.*
