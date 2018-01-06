@@ -1,11 +1,11 @@
-*v0.1.1*
+*v0.2.0*
 # Gameplay Rules
 
 ## Round Overview
-1. Comand
-2. Move Player Ships
+1. Command
+2. Turn and Burn
 3. Place Projectiles
-4. Advance Projectiles
+4. Advance token
 
 ## Setup
 1. The defending player places their ship with no velocity in the center hex of the map, on the White Sands Shipyard.
@@ -16,18 +16,17 @@
 1. Each player secretly sets the rotaions and burn amounts for their ships on their command dials.
 2. When both players have done this they reveal their comand dials.
 
-**Move**
-1. Starting with the defender, each player rotates their ship the amount indicated on their command dial.
-2. Starting with the defender, each player burns their engines, adding the amount indicated on the command dial to their velocity in the direction that their ship's engine thrusts.
+**Turn and Burn**
+1. Starting with the defender, each player rotates their ship the amount indicated on their command dial and increases velocity in the direction that their ship's engine thrusts. If the ship both rotates and thrusts, the thrust must be distributed as evenly as possible amongst all the directions the engine was pointed in during the rotation.
+2. Starting with the defender, each player rotates a missile up to its rotation value (if it has one) and increase its thrust by up to its acceleration in gees.
 
 **Place projectiles**
 1. Both players may fire their weapons as if they were on any hex that they visited this turn.
 
 ## Advance projectiles
-For each projectile on the board:
-1. If the projectile is a missle, the player that controls it increases the velocity by up to its acceleration in gees in the direction it is facing.
-2. Move the projectile the amount indicated on the token.
-3. If the marker was a flak, decrease the spread counter by 1. If it can't be lowered anymore, remove the marker from the board. *The flak has spread out too much to be effective.* 
+For each token with velocity on the board:
+1. Move the projectile the amount indicated on the token.
+2. If the marker was a flak, decrease the spread counter by 1. If it can't be lowered anymore, remove the marker from the board. *The flak has spread out too much to be effective.* 
 
 ## Resolving the velocity counter
 *When it comes to simulating spaceflight manually, simplicity is paramount. There are a few rules that you should use every time you modify your velocity counter to keep the game managable. If you follow these rules, there should never be more than two hexes on your counter in use at one time.*
@@ -53,7 +52,7 @@ Flak is too sparse no interfere with other flak or debris clouds.
 
 ### Collisions between two missiles:
 1. Either player may choose to detonate their missle early.
-2. If either missle was detonated, both become flak, traveling with the same velocity as they had before.
+2. If either missle was detonated, both become flak, traveling with the same velocity as they had before detonation.
 
 ### Collisions between flak and a ship
 1. The player who controls the ship rolls two die. If either of them are higher than the spread value, the SCRAM system on board the ship was able to avoid the debris through a combination of luck and quick calculations. Continue with the steps below only if the flak was not dodged.
@@ -61,7 +60,7 @@ Flak is too sparse no interfere with other flak or debris clouds.
 3. If neither of these defense systems work, the ship is hit! Roll on the ship's damage table to see what happens.
 
 ### Collisions between a missle and a ship
-1. The player who controls the ship may choose to fire one of their missles as a countermeasure. If they do, resolve the collision as a flak and ship collision instead of placing the fired missile.
+1. The player who controls the ship may choose to fire one of their missles as a countermeasure. If they do, resolve the collision as a flak and ship collision instead.
 2. Roll a die to represent the point defenses of the ship firing. If the result is equal to or higher than the rating of the ship's point defenses, the missle was destroyed. Otherwise, the ship is hit by the missile's debris! Roll on the ship's damage table to see what happens.
 3. If neither system sucessfully destroys the missile, the missle sucsessfully delivers it's thermonuclear warhead to the ship and detonates it. The ship is destroyed.
 4. Remove the missile token fron the board.
