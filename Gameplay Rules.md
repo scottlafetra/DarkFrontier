@@ -5,7 +5,7 @@
 1. Command
 2. Turn and Burn
 3. Place Projectiles
-4. Advance token
+4. Advance Tokens
 
 ## Setup
 1. The defending player places their ship with no velocity in the center hex of the map, on the White Sands Shipyard.
@@ -23,15 +23,15 @@
 **Place projectiles**
 1. Both players may fire their weapons as if they were on any hex that they visited this turn.
 
-## Advance projectiles
+**Advance Tokens**
 For each token with velocity on the board:
-1. Move the projectile the amount indicated on the token.
-2. If the marker was a flak, decrease the spread counter by 1. If it can't be lowered anymore, remove the marker from the board. *The flak has spread out too much to be effective.* 
+1. Move the token the amount indicated by its velocity counters.
+2. If the token is flak, decrease the spread counter by 1. If it can't be lowered anymore, remove the token from the board. *The flak has spread out too much to be effective.* 
 
 ## Resolving the velocity counter
 *When it comes to simulating spaceflight manually, simplicity is paramount. There are a few rules that you should use every time you modify your velocity counter to keep the game managable. If you follow these rules, there should never be more than two hexes on your counter in use at one time.*
 1. **Opposites cancel:** If there are ever two dice opposite eachother on the counter, remove a number from each the hexes such that this is no longer true.
-2. **Split dice combine** If there are ever two hexes on the counter that have dice on them that are one hex apart from eachother, remove a number from each the hexes such that this is no longer true and add that number to the hex in between them.
+2. **Split dice combine** If there are ever two dice on the velocity counter that are one hex apart from eachother, remove the diffrence between the die from both die and add that number to the hex in between them.
 
 ## Firing a shot
 *Whether you are launching a missle or just inert flak, your velocity will affect that of your shots. A keen captain will take this into consideration when forming a strategy.*
@@ -71,5 +71,5 @@ Flak is too sparse no interfere with other flak or debris clouds.
 3. The player who fired the least amount of missles resolves missle collisions equal to the diffrence between those two numbers.
 
 ### Gimbaling
-If an engine has gimbaling, you may distribute it's thrust when increasing velocity between two adjacent hexes on the ship's velocity counter.
+If an engine has gimbaling, you may distribute its thrust when increasing velocity between two adjacent hexes on the ship's velocity counter.
 
