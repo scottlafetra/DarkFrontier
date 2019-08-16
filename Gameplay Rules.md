@@ -1,4 +1,4 @@
-*v0.3.0*
+*v0.3.1*
 # Gameplay Rules
 
 ## Round Overview
@@ -36,10 +36,6 @@ For each token with velocity on the board:
 4. Take one of the projectile tokens and place adjacent to the ship firing it. The attacker plays projectiles with the black side up and the defender places projectiles with the white side up.
 5. Copy the velocity from the your right velocity counter onto the projectile.
 5. If the token placed was a flak, place a dice in the center of the token as a spread counter currently set to 6.
-
-## Restrictions on missiles
-1. You may only fire as many missiles per turn as indicated on your ship's stat sheet.
-3. You may not fire a missile if your missle bay isn't functional.
 
 ## Resolving Collisions
 ### Collisions between flak and other flak or missles:
